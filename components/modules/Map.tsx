@@ -3,6 +3,13 @@
 import { Location } from "@/lib/prisma/client";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
+type Location = {
+  id: string;
+  lat: number;
+  lng: number;
+  locationTitle: string;
+};
+
 interface MapProps {
   itineraries: Location[];
 }
