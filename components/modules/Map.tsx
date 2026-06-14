@@ -1,6 +1,6 @@
 "use client";
 
-import { Location } from "@/app/generated/prisma/browser";
+import { Location } from "@prisma/client";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 interface MapProps {
